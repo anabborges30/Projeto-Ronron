@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('form-contato');
 
   // Inputs do formulário
+  if(form) {
     const nomeInput = document.getElementById('nome');
     const emailInput = document.getElementById('email');
     const telefoneInput = document.getElementById('telefone');
@@ -117,5 +118,6 @@ document.addEventListener('DOMContentLoaded', function () {
         msgFeedback.textContent = '';
         msgFeedback.classList.remove('sucesso', 'erro');
     }
+  }
 });
   
