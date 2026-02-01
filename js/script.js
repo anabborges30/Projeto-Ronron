@@ -43,22 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ========= botão de mostrar mais/menos gatos =========
-const collapseElementList = document.querySelectorAll('.collapse')
-const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-
-const btn = document.querySelector('[data-bs-target="#maisGatos"]');
-const collapse = document.getElementById('maisGatos');
-
-collapse.addEventListener('shown.bs.collapse', () => {
-  btn.textContent = 'Ver menos';
-});
-
-collapse.addEventListener('hidden.bs.collapse', () => {
-  btn.textContent = 'Ver mais';
-});
-
-
   // ========= validação do formulário de contato =========
   const form = document.getElementById('form-contato');
 
